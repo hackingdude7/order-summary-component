@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@200;400;500;700;900&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      font-family: 'Red Hat Display', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color:hsl(224, 23%, 55%);
+      background:url(images/pattern-background-desktop.svg) hsl(225, 100%, 94%);
+      background-repeat: no-repeat;
+
+    }
+    .container{
+      margin-top: 5rem;
+      max-width: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      background: white;
+    }
+    img{
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .content{
+      text-align: center;
+      /* border: 2px solid red; */
+      max-width: 78%;
+      font-weight: 500;
+    }
+    .content h2{
+      margin-top: 2.5rem;
+      color: hsl(223, 47%, 23%);
+      font-weight: 1000;
+      font-size: 28px;
+    }
+    .music-content{
+      display: flex;
+      /* border: 2px solid black; */
+      align-items: center;
+      width: 80%;
+      height: 90px;
+      background:hsl(225, 100%, 98%) ;
+      border-radius: 10px;
+    }
+    .music-content img{
+      margin-left: 1.5rem;
+    }
+    .price{
+      margin-left: 1rem;
+    }
+    .price p{
+      margin: 0.3rem;
+      font-weight: 500;
+    }
+    .price p:first-child{
+      color: hsl(223, 47%, 23%);
+      font-weight: bold;
+    }
+    .link{
+      position: relative;     
+       left: 25%;
+    }
+    .link a{
+      color: hsl(245, 75%, 52%);
+      font-weight: 550;
+      text-decoration: underline;
+      transition: all 0.3s;
+    }
+    .link a:hover{
+      color: #766CF1;
+      text-decoration: none;
+    }
+    .payment{
+      width: 80%;
+      margin-top: 2rem;
+      height: 45px;
+      border-radius: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:hsl(245, 75%, 52%) ;
+      box-shadow: 0px 10px 20px hsl(224, 35%, 74%);
+      font-weight: 550;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .payment:hover{
+      background-color:#766CF1;
+    }
+    .cancel{
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      font-weight: bold;
+    }
+    .cancel a{
+      color: hsl(224, 23%, 55%);
+      transition: all 0.3s;
+    }
+    .cancel a:hover{
+      color: hsl(223, 47%, 23%);
+    }
+    a{
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="img-container">
+    <img src="images/illustration-hero.svg" alt="">
+  </div>
+<div class="content">
+<h2>Order Summary</h2>
+<p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+</div>
+<div class="music-content">
+  <img src="images/icon-music.svg" alt="">
+  <div class="price">
+    <p>Annual Plan</p>
+    <p> $59.99/year</p>
+  </div>
+  <div class="link">
+    <a href="#">Change</a>
+  </div>
+</div>
+
+<div class="payment"> 
+<a style="color: white;" href="#">Proceed to Payment</a> 
+</div>
+<div class="cancel"> 
+<a href="#">Cancel Order</a> 
+</div>
+</div>
+   
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
